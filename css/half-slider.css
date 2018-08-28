@@ -4,7 +4,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-half-slider/blob/master/LICENSE)
  */
 
-html { overflow-y: scroll; overflow-x:hidden; }
+body, html { overflow-y: scroll; overflow-x:hidden; }
 
 .app-icon {
     width: 55px;
