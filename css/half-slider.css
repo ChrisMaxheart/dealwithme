@@ -1,0 +1,345 @@
+/*!
+ * Start Bootstrap - Half Slider (https://startbootstrap.com/template-overviews/half-slider)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-half-slider/blob/master/LICENSE)
+ */
+
+.app-icon {
+    width: 55px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 100%;
+
+}
+.carousel-item {
+    height: 65vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.bg-dark {
+    background-color: #ffffff !important
+}
+
+.navbar-dark .navbar-brand {
+    color: #1082c1 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #1082c1 !important;
+}
+
+.bg-blue {
+    background-color: #1082c1 !important;
+}
+
+.navbar-dark .navbar-toggler {
+    color: #1082c1 !important;
+    border-color: #1082c1 !important;
+    font-size: 1em !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#1082c1' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+#navbar-brand-colored {
+    font-size: 1em;
+    color: #1082c1 !important;
+    border-color: #1082c1 !important;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 0.5px;
+    padding: 2px 10px 2px 10px;
+}
+
+@import "https://fonts.googleapis.com/css?family=Dosis:300, 400, 500, 600, 700";
+header:after, #timeline .timeline-item:after, header:before, #timeline .timeline-item:before {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.py-5.grey{
+    background-color: #fafafa !important;
+}
+.py-5 h1,
+h2,
+h3,
+h4 {
+    font-family: "Dosis", arial, tahoma, verdana;
+    font-weight: 500;
+}
+
+.section-title.blue {
+    font-weight: 600 !important;
+    font-size: 2.571em;
+    color: #1082c1 !important;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.section-title.white{
+    color: #fff !important;
+}
+
+#timeline {
+    width: 100%;
+    margin: 30px auto;
+    position: relative;
+    padding: 0 10px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+
+.flex-direction-row {
+    display:inline-flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+}
+
+.flex-left {
+    width: 30%
+}
+
+@media screen and (max-width: 400px) {
+    .flex-left {
+        width: 100%;
+    }
+}
+/*#timeline:before {*/
+    /*content: "";*/
+    /*width: 3px;*/
+    /*height: 100%;*/
+    /*background: #1082c1;*/
+    /*left: 49%;*/
+    /*top: 0;*/
+    /*position: absolute;*/
+}
+
+#timeline:after {
+    content: "";
+    clear: both;
+    display: table;
+    width: 100%;
+}
+
+#timeline .timeline-item {
+    position: relative;
+}
+
+#timeline .timeline-item .timeline-icon {
+    border-color: #1082c1 !important;
+    border-style: solid;
+    border-width: 2px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    overflow: hidden;
+    margin-left: -23px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+
+}
+
+.instruction {
+    text-align:center;
+    color: #1082c1;
+    font-weight: bold;
+}
+
+
+#timeline .timeline-item .timeline-content {
+    width: 45%;
+    background: #fff;
+    padding: 0px 20px 0px 0px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#timeline .timeline-item .timeline-content.right {
+    float: right;
+}
+
+.timeline-content-header {
+    color: #000 !important;
+    font-weight: bold;
+
+}
+
+.timeline-content-header:hover {
+    color: #1082c1 !important;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    #timeline {
+        margin: 30px;
+        padding: 0px;
+        width: 90%;
+    }
+
+    #timeline:before {
+        left: 0;
+    }
+
+    #timeline .timeline-item .timeline-content {
+        width: 90%;
+        float: right;
+    }
+
+    #timeline .timeline-item .timeline-icon {
+        left: 0;
+    }
+
+
+}
+
+@media screen and (max-width: 275px) {
+    .navbar-toggler{
+        margin-top: 20px;
+    }
+}
+
+/*benefit/service section*/
+
+.text-muted {
+    padding-top: 20px;
+    font-size: 1.0em;
+}
+.row.text-center{
+    padding-top: 50px;
+
+}
+
+/*sign-up form*/
+.cta {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5rem;
+}
+
+#contact{
+    background: url(https://tickera-wpsalad.netdna-ssl.com/blog/wp-content/uploads/2015/09/event-saving1.jpg?c62c64) no-repeat center center;
+    background-size: cover;
+    height: 55vh;
+}
+
+
+/* Latest deals */
+.grid2x2 {
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 370px 200px;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.grid2x2 .box {
+    color: #fff;
+    display: flex;
+    font-size: 40px;
+    margin-right: 20px;
+    font-family: sans-serif;
+    width: 370px !important;
+    position: relative;
+    text-align: center;
+}
+
+.grid2x2 .box {
+    width: 370px;
+    height: 200px;
+}
+
+
+.flex-left-60{
+    width: 60%
+}
+
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 0px;
+    background-color: #ffcb06;
+    color: #000;
+    padding: 5px 5px 0px 5px;
+}
+
+.top-right p {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.flex-left-60 .box{
+    position: relative;
+    text-align: center;
+}
+
+/*Download*/
+.dl--stores {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    padding: 40px;
+}
+
+.dl--stores a img{
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.playstore img{
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    width: 100px;
+    border-radius: 5px;
+
+}
+
+.playstore li {
+    display: inline-block;
+}
+
+
+
