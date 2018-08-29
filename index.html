@@ -107,7 +107,7 @@
         <h1 class="section-title blue">How it works</h1>
         <div id="timeline" class="flex-direction-row">
             <div class="flex-left">
-                <img src="assets/iphone_7.png" height="450px" width="450px">
+                <img src="assets/iphone_7.png" height="450px" width="450px" id="iphone_demo">
             </div>
             <div>
                 <div class="timeline-item" id="instruction-one">
@@ -220,8 +220,8 @@
 
         <div class="flex-left-60">
             <div class="box">
-                <img src="assets/safra_movie.jpg" alt="Snow" style="width: 600px; height: 420px; margin-right: 20px;">
-                <div class="top-right" style="right: 30px;"><p>9 August 2018</p></div>
+                <img  id="big_promotion" src="assets/safra_movie.jpg" alt="Snow">
+                <div class="top-right" id ="big_promotion_tag"><p>9 August 2018</p></div>
             </div>
         </div>
         <div class="grid2x2">
@@ -250,12 +250,30 @@
 <section class="py-5" id="contact">
     <div class="container" id="contact-container">
         <div class="cta container rounded text-center text-white">
-            <h2 style="margin-bottom: 40px;">Sign up to receive promotion updates</h2>
+            <h2  id="promotion_update" style="margin-bottom: 40px;">Sign up to receive promotion updates</h2>
             <form class="form-inline justify-content-center"
                   action="https://submit-form.com/3f253b07-5cf0-490f-9bc7-9fdef60e483c" method="POST">
-                <input type="email" name="email" class="form-control form-control-lg mr-2"
-                       placeholder="Enter your email...">
-                <button type="submit" class="btn btn-lg btn-primary">Sign up</button>
+                <input  type="email" name="email" class="form-control form-control-lg mr-2"
+                       placeholder="Enter your email..." id="promotion_update_input">
+                <button type="submit" class="btn btn-lg btn-primary"  id="promotion_update_button">Sign up</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+<!-- Contact -->
+<section class="py-5" id="feedback">
+    <div class="container" id="feedback-container">
+        <div class="cta container rounded text-center text-white">
+            <h2  id="feedback-title" style="margin-bottom: 40px;">Give us feedback</h2>
+            <form class="form-inline justify-content-center"
+                  action="https://submit-form.com/3f253b07-5cf0-490f-9bc7-9fdef60e483c" method="POST">
+                <input  type="email" name="email" class="form-control form-control-lg mr-2"
+                        placeholder="Your email (optional)..." id="feedback_email_input">
+                <textarea type="email" name="email" class="form-control form-control-lg mr-2"
+                          placeholder="Enter your feedback..." id="feedback_input"></textarea>
+                <button type="submit" class="btn btn-lg btn-primary yellow"  id="feedback_button">Submit</button>
             </form>
         </div>
 
@@ -265,8 +283,8 @@
 <!-- Footer -->
 <footer class="py-5" style="background-color: #363A45">
     <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Deal With Me 2018</p>
-        <div class="" style="display:inline-block; float:right">
+        <p class="m-0 text-center text-white" id="footer-title">Copyright &copy; Deal With Me 2018</p>
+        <div class="" style="display:inline-block; float:right" id="footer-playstore">
             <ul class="playstore">
                 <li>
                     <a onclick="ga('send', { hitType: 'event', eventCategory: 'Website', eventAction: 'Download',  eventLabel: 'Web'});"
