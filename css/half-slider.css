@@ -5,12 +5,12 @@
  */
 
 body, html {
-    overflow-x:hidden;
+    overflow:hidden;
     width: 100%;
 }
 
 nav section header {
-    overflow-x:hidden;
+    overflow:hidden;
 }
 .app-icon {
     width: 55px;
