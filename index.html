@@ -20,19 +20,19 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
           integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
-    <link href="https://fonts.googleapis.com/css?family=Rubik:400,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo:400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
 </head>
 
 <body>
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbar">
     <div class="container">
         <img src="assets/app_icon.png" class="app-icon">
         <a class="navbar-brand" href="#"
-           style="font-family: 'Rubik', serif; font-size: 2em; font-weight: bold; font-style: italic">Deal With Me</a>
-        <a class="navbar-brand" id="navbar-brand-colored" href="#">Share exclusive deals</a>
+           style="font-family: 'Arvo', serif; font-size: 2.5em; font-weight: 400">DealWithMe</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -40,7 +40,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home
+                    <a class="nav-link" href="#home">Home
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
@@ -51,7 +51,7 @@
                     <a class="nav-link" href="#download">Download</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link no-border-right" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -60,45 +60,56 @@
 
 <!-- Slider -->
 <header>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
+    <div id="home" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner" role="listbox">
             <!-- Slide One - Set the background image for this slide in the line below -->
-            <div class="carousel-item active" style="background-image: url('http://placehold.it/1900x1080')">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3>First Slide</h3>
-                    <p>This is a description for the first slide.</p>
-                </div>
+            <div class="carousel-item active" style="background-image: url('assets/cover_2.jpg')">
+                <div class="carousel-caption">
+                    <h1 class="caption-header">THE BEST WAY TO ENJOY PROMOTION</h1>
+                    <p></p>
+                    <a class="btn btn-lg btn-green text-caps weight-bold" href="#download">Download Now!</a></div>
             </div>
-            <!-- Slide Two - Set the background image for this slide in the line below -->
-            <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3>Second Slide</h3>
-                    <p>This is a description for the second slide.</p>
-                </div>
-            </div>
-            <!-- Slide Three - Set the background image for this slide in the line below -->
-            <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3>Third Slide</h3>
-                    <p>This is a description for the third slide.</p>
-                </div>
+
+        </div>
+</header>
+
+<!-- Benefits -->
+<section class="py-5 grey" id="benefits">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1 class="section-title blue">Why Deal With Me?</h1>
+
             </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+        <div class="row text-center">
+            <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+                <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-tags fa-stack-1x fa-inverse"></i>
+            </span>
+                <h4 class="service-heading">Share</h4>
+                <p class="text-muted">Share a promotion you have always wanted</p>
+            </div>
+            <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+                <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-wallet fa-stack-1x fa-inverse"></i>
+            </span>
+                <h4 class="service-heading">Save</h4>
+                <p class="text-muted">Shop more spend less.</p>
+            </div>
+            <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+                <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-users fa-stack-1x" style="color:#fff !important"></i>
+            </span>
+                <h4 class="service-heading">Socialise</h4>
+                <p class="text-muted">Meet people with same interests</p>
+            </div>
+        </div>
     </div>
-</header>
+</section>
 
 <!-- Page Content -->
 <!-- How it works -->
@@ -107,7 +118,7 @@
         <h1 class="section-title blue">How it works</h1>
         <div id="timeline" class="flex-direction-row">
             <div class="flex-left">
-                <img src="assets/iphone_7.png" height="450px" width="450px" id="iphone_demo">
+                <img src="assets/iphone_7.png" height="450px" width="450px" id="iphone_demo" style="margin-top: -25px;">
             </div>
             <div>
                 <div class="timeline-item" id="instruction-one">
@@ -150,40 +161,6 @@
     </div>
 </section>
 
-<!-- Benefits -->
-<section class="py-5 grey" id="benefits">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1 class="section-title blue">Benefits</h1>
-
-            </div>
-        </div>
-        <div class="row text-center">
-            <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-                <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fas fa-tags fa-stack-1x fa-inverse"></i>
-            </span>
-                <p class="text-muted">Share a promotion you have always wanted</p>
-            </div>
-            <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-                <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-            </span>
-                <p class="text-muted">Shop more spend less.</p>
-            </div>
-            <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-                <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fas fa-users fa-stack-1x" style="color:#fff !important"></i>
-            </span>
-                <p class="text-muted">Meet people with same interests</p>
-            </div>
-        </div>
-    </div>
-</section>
 
 <!--Download-->
 <section class="py-5" style="background-color: rgba(19,19,19,1);" id="download">
@@ -209,7 +186,7 @@
 </section>
 
 <!-- Latest deals -->
-<section class="py-5" id="latest_deals">
+<section class="py-5 grey" id="latest_deals">
     <div class="row">
         <div class="col-lg-12 text-center">
             <h1 class="section-title blue" style="margin-bottom: 40px">Latest deals</h1>
@@ -220,8 +197,8 @@
 
         <div class="flex-left-60">
             <div class="box">
-                <img  id="big_promotion" src="assets/safra_movie.jpg" alt="Snow">
-                <div class="top-right" id ="big_promotion_tag"><p>9 August 2018</p></div>
+                <img id="big_promotion" src="assets/safra_movie.jpg" alt="Snow">
+                <div class="top-right" id="big_promotion_tag"><p>9 August 2018</p></div>
             </div>
         </div>
         <div class="grid2x2">
@@ -246,39 +223,139 @@
     </div>
 </section>
 
-<!-- Contact -->
-<section class="py-5" id="contact">
-    <div class="container" id="contact-container">
-        <div class="cta container rounded text-center text-white">
-            <h2  id="promotion_update" style="margin-bottom: 40px;">Sign up to receive promotion updates</h2>
-            <form class="form-inline justify-content-center"
-                  action="https://submit-form.com/3f253b07-5cf0-490f-9bc7-9fdef60e483c" method="POST">
-                <input  type="email" name="email" class="form-control form-control-lg mr-2"
-                       placeholder="Enter your email..." id="promotion_update_input">
-                <button type="submit" class="btn btn-lg btn-primary"  id="promotion_update_button">Sign up</button>
-            </form>
-        </div>
+<!--&lt;!&ndash; Contact &ndash;&gt;-->
+<!--<section class="py-5" id="contact">-->
+<!--<div class="container" id="contact-container">-->
+<!--<div class="cta container rounded text-center text-white">-->
+<!--<h2 id="promotion_update" style="margin-bottom: 40px;">Sign up to receive promotion updates</h2>-->
+<!--<form class="form-inline justify-content-center"-->
+<!--action="https://submit-form.com/3f253b07-5cf0-490f-9bc7-9fdef60e483c" method="POST">-->
+<!--<input type="email" name="email" class="form-control form-control-lg mr-2"-->
+<!--placeholder="Enter your email..." id="promotion_update_input">-->
+<!--<button type="submit" class="btn btn-lg btn-primary" id="promotion_update_button">Sign up</button>-->
+<!--</form>-->
+<!--</div>-->
 
-    </div>
-</section>
+<!--</div>-->
+<!--</section>-->
 
-<!-- Contact -->
+<!-- Feedback -->
 <section class="py-5" id="feedback">
     <div class="container" id="feedback-container">
         <div class="cta container rounded text-center text-white">
-            <h2  id="feedback-title" style="margin-bottom: 40px;">Give us feedback</h2>
-            <form class="form-inline justify-content-center"
+            <h2 id="feedback-title" style="margin-bottom: 40px;">Give us feedback</h2>
+            <form class="justify-content-center"
                   action="https://submit-form.com/3f253b07-5cf0-490f-9bc7-9fdef60e483c" method="POST">
-                <input  type="email" name="email" class="form-control form-control-lg mr-2"
-                        placeholder="Your email (optional)..." id="feedback_email_input">
-                <textarea type="email" name="email" class="form-control form-control-lg mr-2"
+                <input type="email" name="email" class="form-control form-control-lg mr-2 form-display-block"
+                       placeholder="Your email (optional)..." id="feedback_email_input">
+                <textarea type="email" name="email" class="form-control form-control-lg mr-2 form-display-block"
                           placeholder="Enter your feedback..." id="feedback_input"></textarea>
-                <button type="submit" class="btn btn-lg btn-primary yellow"  id="feedback_button">Submit</button>
+                <button type="submit" class="btn btn-lg btn-primary yellow" id="feedback_button">Submit</button>
             </form>
         </div>
 
     </div>
 </section>
+
+<section class="py-5" id="second-footer">
+    <div class="row" id="second-footer-row">
+
+        <div class="col-sm-6 col-md-3">
+            <div class="widget-wrapper animated shown">
+
+                <h3 class="title title_left">About DealWithMe</h3>
+
+                <div class="inner about_us">
+
+                    <p class="message">Deal With Me is a platform where people can share such promotions or deals with, therefore leading to mutual benefits. We aim to help everyone enjoy sales promotions or deals, or even share common experiences with other like-minded people
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <!--<div class="col-sm-6 col-md-3" style="border-left-style: solid; border-left-width: 0.5px; border-color: #444;">-->
+            <!--<div class="widget-wrapper animated shown">-->
+                <!--<h3 class="title title_left">Terms & Conditions</h3>-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <div class="col-sm-6 col-md-3" style="border-left-style: solid; border-left-width: 0.5px; border-color: #444;">
+            <div class="widget-wrapper animated shown">
+
+                <h3 class="title title_left">Newsletter</h3>
+
+                <div class="inner inner-newsletter">
+
+                    <form action="//chope.us7.list-manage.com/subscribe/post?u=4ed7d9a18c01e7e8949437373&amp;id=8d0460ef4c"
+                          method="post" id="mc-embedded-subscribe-form" class="mailing-form"
+                          name="mc-embedded-subscribe-form" target="_blank">
+                        <div class="group-input">
+                            <input type="email" required="required" name="EMAIL" id="email-input">
+                            <span class="bar"></span>
+                            <label>Enter your email to subscribe *</label>
+                            <!--<button type="submit"><i class="zmdi"></i></button>-->
+                        </div>
+                    </form>
+
+
+                    <div class="caption">Sign up for our newsletter and receive promotion updates!</div>
+
+                </div>
+
+
+                <div id="widget-social" class="social-icons">
+                    <ul class="list-inline">
+
+                        <li>
+                            <a target="_blank" href="https://www.facebook.com/ChopeSG/" class="social-wrapper facebook">
+        <span class="social-icon">
+          <i class="fab fa-facebook"></i>
+        </span>
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a target="_blank" href="https://twitter.com/ChopeSG" class="social-wrapper twitter">
+        <span class="social-icon">
+          <i class="fab fa-twitter"></i>
+        </span>
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a target="_blank" href="https://google.com/+ChopeRestaurantReservations"
+                               class="social-wrapper google">
+        <span class="social-icon">
+          <i class="fab fa-google-plus"></i>
+        </span>
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a target="_blank" href="https://www.instagram.com/chopesg/"
+                               class="social-wrapper instagram">
+        <span class="social-icon">
+          <i class="fab fa-instagram"></i>
+        </span>
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
 
 <!-- Footer -->
 <footer class="py-5" style="background-color: #363A45">
@@ -290,22 +367,39 @@
                     <a onclick="ga('send', { hitType: 'event', eventCategory: 'Website', eventAction: 'Download',  eventLabel: 'Web'});"
                        target="_blank" href="#"><img
                             src="https://cdn.grab.com/sg/wp-content/uploads/media/images/footer/app-store.png"
-                            class="img-responsive"></a></li>
+                            class="img-responsive"></a>
+                </li>
                 <li>
                     <a onclick="ga('send', { hitType: 'event', eventCategory: 'Website', eventAction: 'Download',  eventLabel: 'Web'});"
                        target="_blank" href="#"><img
                             src="https://cdn.grab.com/sg/wp-content/uploads/media/images/footer/google-play.png"
-                            class="img-responsive"></a></li>
+                            class="img-responsive"></a>
+                </li>
             </ul>
         </div>
     </div>
     <!-- /.container -->
 </footer>
 
+
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+
 </body>
+
+<script>
+    jQuery(document).ready(function ($) {
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 400) {
+                $('#navbar').css("background-color", 'red');
+            }
+            else {
+                $('#navbar').css("opacity", 1);
+            }
+        });
+    });
+</script>
 
 </html>
