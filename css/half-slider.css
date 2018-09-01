@@ -795,15 +795,11 @@ h4 {
 
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1300px){
     .hide-on-small{
         display: none;
     }
 }
-
-
-
-
 
 .form-display-block {
     margin-bottom: 20px;
