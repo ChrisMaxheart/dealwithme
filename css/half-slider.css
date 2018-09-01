@@ -587,7 +587,7 @@ h4 {
     line-height: 40px;
     border: none;
     border-radius: 0.3rem;
-    padding: 5px 15px;
+    padding: 0px 15px 5px 15px;
     background: #1082c1;
     margin-right: 10px;
     font-size: 14px;
