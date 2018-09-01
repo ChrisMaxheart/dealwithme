@@ -83,7 +83,47 @@ nav section header {
     padding: 2px 10px 2px 10px;
 }
 
+#instruction-one:hover > #timeline-icon-one {
+    background-color: #1082c1;
 
+}
+
+#instruction-one:hover > #timeline-icon-one p {
+    color: #fff;
+}
+
+#instruction-link-one:active > #timeline-icon-one {
+    background-color: #1082c1;
+
+}
+
+#instruction-two:hover > #timeline-icon-two {
+    background-color: #1082c1;
+
+}
+
+#instruction-two:hover > #timeline-icon-two p {
+    color: #fff;
+}
+
+#instruction-link-two:active > #timeline-icon-two {
+    background-color: #1082c1;
+
+}
+
+#instruction-three:hover > #timeline-icon-three {
+    background-color: #1082c1;
+
+}
+
+#instruction-three:hover > #timeline-icon-three p {
+    color: #fff;
+}
+
+#instruction-link-three:active > #timeline-icon-three {
+    background-color: #1082c1;
+
+}
 
 @import "https://fonts.googleapis.com/css?family=Dosis:300, 400, 500, 600, 700";
 header:after, #timeline .timeline-item:after, header:before, #timeline .timeline-item:before {
@@ -231,6 +271,7 @@ h4 {
     color: #1082c1 !important;
     cursor: pointer;
 }
+
 
 @media screen and (max-width: 768px) {
     #timeline {
