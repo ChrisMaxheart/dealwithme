@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Deal With Me</title>
+    <title>DealWithMe</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -45,13 +45,10 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#benefits">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#download">Download</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link no-border-right" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -63,14 +60,33 @@
     <div id="home" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner" role="listbox">
             <!-- Slide One - Set the background image for this slide in the line below -->
-            <div class="carousel-item active" style="background-image: url('assets/cover_2.jpg')">
+            <div class="carousel-item active" style="background-image: url('assets/cover_2.jpg'); position: relative">
                 <div class="carousel-caption">
                     <h1 class="caption-header">THE BEST WAY TO ENJOY PROMOTION</h1>
                     <p></p>
-                    <a class="btn btn-lg btn-green text-caps weight-bold" href="#download">Download Now!</a></div>
+                    <a class="btn btn-lg btn-green text-caps weight-bold" href="#download">Download Now!</a>
+                </div>
+                <div class="card-form floatForm hide-on-small">
+                    <form class="signup">
+                        <div class="form-title" style="color: #fff">Sign Up for our Deal Updates!</div>
+                        <div class="form-body">
+                            <div class="form-row front-row">
+                                <input type="text" placeholder="First Name*">
+                                <input type="text" placeholder="Last Name*">
+                            </div>
+                            <div class="form-row" id="full-width-input">
+                                <input type="text" placeholder="Email Address*">
+                            </div>
+                        </div>
+                        <div class="rule"></div>
+                        <div class="form-footer">
+                            <a style="color: #fff">Sign Me Up!<i class="fa fa-thumbs-o-up"></i></a>
+                        </div>
+                    </form>
+                </div>
             </div>
-
         </div>
+    </div>
 </header>
 
 <!-- Benefits -->
@@ -78,7 +94,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1 class="section-title blue">Why Deal With Me?</h1>
+                <h1 class="section-title blue">Why DealWithMe?</h1>
 
             </div>
         </div>
@@ -121,41 +137,46 @@
                 <img src="assets/iphone_7.png" height="450px" width="450px" id="iphone_demo" style="margin-top: -25px;">
             </div>
             <div>
-                <div class="timeline-item" id="instruction-one">
-                    <div class="timeline-icon" id="timeline-icon-one">
-                        <a href="#" id="instruction-link-one"><p class="instruction" id="instruction">1</p><a>
+                <a href="#" id="instruction-link-one" onclick="changeImageOne()">
+                    <div class="timeline-item" id="instruction-one">
+                        <div class="timeline-icon" id="timeline-icon-one">
+                            <p class="instruction" id="instruction">1</p>
+                        </div>
+                        <div class="timeline-content right" id="timeline-header">
+                            <p class="timeline-content-header">Create an event to share deals</p>
+                            <p class="timeline-description">
+                                Indicate your time, location and number of people
+                            </p>
+                        </div>
                     </div>
-                    <div class="timeline-content right" id="timeline-header">
-                        <p class="timeline-content-header">Create an event to share deals</p>
-                        <p>
-                            Indicate your time, location and number of people
-                        </p>
-                    </div>
-                </div>
+                </a>
 
-                <div class="timeline-item" id="instruction-two">
+                <a href="#" id="instruction-link-two"><div class="timeline-item" id="instruction-two">
                     <div class="timeline-icon" id="timeline-icon-two">
-                        <a href="#" id="instruction-link-two"><p class="instruction">2</p><a>
+                        <p class="instruction">2</p>
                     </div>
                     <div class="timeline-content right" id="timeline-header-two">
                         <p class="timeline-content-header">Choose your deal partner</p>
-                        <p>
+                        <p class="timeline-description">
                             Select who you want to enjoy the deal with
                         </p>
                     </div>
-                </div>
+                    </div>
+                </a>
 
-                <div class="timeline-item" id="instruction-three">
-                    <div class="timeline-icon" id="timeline-icon-three">
-                        <a href="#" id="instruction-link-three"><p class="instruction">3</p><a>
+                <a href="#" id="instruction-link-three">
+                    <div class="timeline-item" id="instruction-three">
+                        <div class="timeline-icon" id="timeline-icon-three">
+                            <p class="instruction">3</p>
+                        </div>
+                        <div class="timeline-content right" id="timeline-header-three">
+                            <p class="timeline-content-header">Enjoy the deal</p>
+                            <p class="timeline-description">
+                                Get a great promotion with great company
+                            </p>
+                        </div>
                     </div>
-                    <div class="timeline-content right" id="timeline-header-three">
-                        <p class="timeline-content-header">Enjoy the deal</p>
-                        <p>
-                            Get a great promotion with great company
-                        </p>
-                    </div>
-                </div>
+                </a>
 
             </div>
         </div>
@@ -168,7 +189,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1 class="section-title" style="color: white;">Download Deal With Me</h1>
+                <h1 class="section-title" style="color: white;">Download DealWithMe</h1>
             </div>
         </div>
         <div class="dl--stores">
@@ -244,7 +265,7 @@
 <section class="py-5" id="feedback">
     <div class="container" id="feedback-container">
         <div class="cta container rounded text-center text-white">
-            <h2 id="feedback-title" style="margin-bottom: 40px;">Give us feedback</h2>
+            <h2 id="section-title blue" style="margin-bottom: 40px;">Give us feedback</h2>
             <form class="justify-content-center"
                   action="https://submit-form.com/3f253b07-5cf0-490f-9bc7-9fdef60e483c" method="POST">
                 <input type="email" name="email" class="form-control form-control-lg mr-2 form-display-block"
@@ -268,7 +289,7 @@
 
                 <div class="inner about_us">
 
-                    <p class="message">Deal With Me is a platform where people can share such promotions or deals with, therefore leading to mutual benefits. We aim to help everyone enjoy sales promotions or deals, or even share common experiences with other like-minded people
+                    <p class="message">DealWithMe is a platform where people can share such promotions or deals with, therefore leading to mutual benefits. We aim to help everyone enjoy sales promotions or deals, or even share common experiences with other like-minded people
                     </p>
 
                 </div>
@@ -361,7 +382,7 @@
 <!-- Footer -->
 <footer class="py-5" style="background-color: #363A45">
     <div class="container">
-        <p class="m-0 text-center text-white" id="footer-title">Copyright &copy; Deal With Me 2018</p>
+        <p class="m-0 text-center text-white" id="footer-title">Copyright &copy; DealWithMe 2018</p>
         <div class="" style="display:inline-block; float:right" id="footer-playstore">
             <ul class="playstore">
                 <li>

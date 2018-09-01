@@ -125,6 +125,10 @@ nav section header {
 
 }
 
+.timeline-description {
+    color: #040505;
+}
+
 @import "https://fonts.googleapis.com/css?family=Dosis:300, 400, 500, 600, 700";
 header:after, #timeline .timeline-item:after, header:before, #timeline .timeline-item:before {
     content: "";
@@ -522,11 +526,83 @@ h4 {
     padding-left: 5px;
 }
 
+.card-form {
+    width: 500px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+}
+.card-form .form-title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    font-size: 20px;
+    font-weight: bold;
+    background: #1082c1;
+    border-radius: 10px 10px 0 0;
+}
+.card-form .form-body {
+    padding: 10px;
+}
+.card-form .form-body .form-row {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.card-form .form-body .form-row input[type="text"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0 15px;
+    height: 35px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background: #e8ebed;
+    color: #576366;
+    font-size: 14px;
+}
+
+.front-row{ 
+    margin-left: -22px;
+}
+#full-width-input input[type="text"]{
+    width: 100% !important;
+}
+.card-form .rule {
+    height: 2px;
+    background: #e8ebed;
+    margin: 0px 35px;
+}
+.card-form .form-footer {
+    margin: 0 25px 15px 25px;
+    padding: 15px 10px;
+}
+.card-form .form-footer a {
+    display: inline-block !important;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 5px 15px;
+    background: #1082c1;
+    margin-right: 10px;
+    font-size: 14px;
+}
+.card-form .form-footer span {
+    margin-left: 8px;
+}
+
+
 @media screen and (min-width:320px) and (max-width:667px) {
 
     .carousel-item {
         background: no-repeat center center ;
-        height: 100vh
+        height: 100vh;
+        margin-bottom: -40px;
     }
 
     .navbar-brand{
@@ -637,6 +713,18 @@ h4 {
         margin-left: 0px;
     }
 
+    .floatForm {
+        max-width: 100%;
+    }
+    .hide-on-small {
+        display: none;
+    }
+    .hide-on-large {
+        display: block;
+    }
+
+
+
 }
 
 @media screen and (min-width:320px) and (max-width:1000px){
@@ -655,6 +743,45 @@ h4 {
         margin-top: 75px !important;
     }
 }
+
+@media screen and (min-width: 1400px){
+    .carousel-caption{
+        left: 20%;
+        bottom: 80px;
+    }
+    .floatForm {
+        position: absolute;
+        right: 15px;
+        top: 180px;
+        z-index: 4;
+    }
+    .hide-on-small {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1000px) and  (max-width: 1400px) {
+    .carousel-caption{
+        left: 10%;
+    }
+
+    .floatForm {
+        position: absolute;
+        right: 15px;
+        top: 180px;
+        z-index: 4;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .hide-on-small{
+        display: none;
+    }
+}
+
+
+
+
 
 .form-display-block {
     margin-bottom: 20px;
