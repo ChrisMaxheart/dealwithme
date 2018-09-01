@@ -776,7 +776,24 @@ h4 {
     #iphone_demo {
         margin-left: 150px;
     }
+
+
 }
+
+@media screen and (min-width: 1000px) {
+    .nav-item{
+        border-color: #1082c1;
+        border-right-style: solid;
+        border-right-width: 0.5px;
+    }
+
+    .no-border {
+        border-right-style: none;
+    }
+
+}
+
+
 @media screen and (min-width: 667px) and  (max-width: 1000px) {
     .carousel-caption{
         left: 10%;
