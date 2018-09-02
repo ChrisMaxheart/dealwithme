@@ -1,3 +1,3 @@
 # Deal With Me App Landing page
-A CS33216 project
-With the help of bootstrap
+A CS3216 Project Assignment (Assignment 1: UI/UX Design)
+This landing page is created by using the help of Bootstrap Template

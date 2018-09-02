@@ -81,7 +81,7 @@
                             </div>
                             <div class="rule"></div>
                             <div class="form-footer" style="margin: 0 auto; text-align: center">
-                                <a style="color: #fff">Sign me up<i class="fa fa-thumbs-o-up"></i></a>
+                                <a style="color: #fff" class="signup-button">Sign me up<i class="fa fa-thumbs-o-up"></i></a>
                             </div>
                         </form>
                     </div>
@@ -443,6 +443,9 @@
         document.getElementById("iphone_demo").src = "assets/screen_three.png";
 
     }
+    $(".signup-button").hover(function() {
+        $(this).css("cursor", "pointer");
+    });
 </script>
 
 
