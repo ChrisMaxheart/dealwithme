@@ -27,35 +27,35 @@
 
 </head>
 
-<body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbar">
-        <div class="container">
-            <img src="assets/app_icon.png" class="app-icon">
-            <a class="navbar-brand" href="#"
-               style="font-family: 'Arvo', serif; font-size: 2.5em; font-weight: 400">DealWithMe</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#home">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#benefits">About</a>
-                    </li>
-                    <li class="nav-item no-border">
-                        <a class="nav-link" href="#download">Download</a>
-                    </li>
-                </ul>
-            </div>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbar">
+    <div class="container">
+        <img src="assets/app_icon.png" class="app-icon">
+        <a class="navbar-brand" href="#"
+           style="font-family: 'Arvo', serif; font-size: 2.5em; font-weight: 400">DealWithMe</a>
+        <button class="navbar-toggler" id="navbar-button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#benefits">About</a>
+                </li>
+                <li class="nav-item no-border">
+                    <a class="nav-link" href="#download">Download</a>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
+<body>
+    <div id="body">
     <!-- Slider -->
     <header>
         <div id="home" class="carousel slide" data-ride="carousel">
@@ -63,12 +63,12 @@
                 <!-- Slide One - Set the background image for this slide in the line below -->
                 <div class="carousel-item active" style="background-image: url('assets/cover_2.png'); position: relative">
                     <div class="carousel-caption">
-                        <h1 class="caption-header">THE BEST WAY TO ENJOY PROMOTION</h1>
+                        <h1 class="caption-header">THE BEST WAY TO ENJOY PROMOTIONS</h1>
                         <p></p>
                         <a class="btn btn-lg btn-green text-caps weight-bold" href="#download">Download Now!</a>
                     </div>
                     <div class="card-form floatForm hide-on-small">
-                        <form class="signup">
+                        <form action="https://submit-form.com/3f253b07-5cf0-490f-9bc7-9fdef60e483c" method="POST" class="signup">
                             <div class="form-title" style="color: #fff">Sign Up for our Deal Updates!</div>
                             <div class="form-body">
                                 <div class="form-row front-row">
@@ -81,17 +81,25 @@
                             </div>
                             <div class="rule"></div>
                             <div class="form-footer" style="margin: 0 auto; text-align: center">
+
                                 <a style="color: #fff" class="signup-button">Sign me up<i class="fa fa-thumbs-o-up"></i></a>
+
+                                <button type="submit" class="btn btn-lg btn-primary" style="background-color: #1082c1">Sign up</button>
+
                             </div>
                         </form>
                     </div>
                 </div>
+                <div style="margin-top: -40px;" id="benefits"></div>
+
             </div>
         </div>
+
     </header>
 
+
     <!-- Benefits -->
-    <section class="py-5 grey" id="benefits">
+    <section class="py-5 grey">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -181,6 +189,7 @@
                                     Get a great promotion with great company
                                 </p>
                             </div>
+                            <div id="download"></div>
                         </div>
                     </a>
 
@@ -190,10 +199,8 @@
             </div>
         </div>
     </section>
-
-
     <!--Download-->
-    <section class="py-5" style="background-color: rgba(19,19,19,1);" id="download">
+    <section class="py-5" style="background-color: rgba(19,19,19,1);" >
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -419,6 +426,7 @@
 
         </div>
     </section>
+    </div>
 </body>
 
 <!-- Footer -->
@@ -485,6 +493,24 @@
     });
 
     $(".no-limit").css("max-width", "none");
+
+    $('#body').click(function() {
+        if ($('#navbarResponsive').css('display') == "block"){
+            console.log('true');
+            $('#navbarResponsive').css("display", "none");
+        }
+    });
+
+    $('nav').click(function() {
+        if ($('#navbarResponsive').css('display') == "none"){
+            $('#navbarResponsive').css("display", "block")
+            $('#navbarResponsive').addClass("show")
+        }
+        else{
+            $('#navbarResponsive').css("display", "none");
+        }
+    });
+
 </script>
 
 
