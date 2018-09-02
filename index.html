@@ -56,8 +56,6 @@
 
 <body>
     <div id="body">
-
-
     <!-- Slider -->
     <header>
         <div id="home" class="carousel slide" data-ride="carousel">
@@ -83,7 +81,11 @@
                             </div>
                             <div class="rule"></div>
                             <div class="form-footer" style="margin: 0 auto; text-align: center">
+
+                                <a style="color: #fff" class="signup-button">Sign me up<i class="fa fa-thumbs-o-up"></i></a>
+
                                 <button type="submit" class="btn btn-lg btn-primary" style="background-color: #1082c1">Sign up</button>
+
                             </div>
                         </form>
                     </div>
@@ -137,20 +139,23 @@
     <!-- Page Content -->
     <!-- How it works -->
     <section class="py-5" id="about">
-        <div class="container">
+        <div class="container no-margin no-limit">
             <h1 class="section-title blue" style="margin-bottom: 50px;">How it works</h1>
-            <div id="timeline" class="flex-direction-row">
-                <div class="flex-left">
+            <div id="timeline" class="row">
+                <div class="empty-whitespace col-xs-0 col-md-1 col-xl-3"></div>
+
+                <div class="col-xs-6 col-md-5 col-xl-3">
                     <img id="iphone_demo" src="assets/screen_zero.png" height="500px" width="250px"
-                         style="position: relative; margin-top: -50px;">
+                         style="position: relative;">
                 </div>
-                <div>
-                    <a href="#" id="instruction-link-one" onclick="changeImageOne()">
-                        <div class="timeline-item" id="instruction-one">
-                            <div class="timeline-icon" id="timeline-icon-one">
+
+                <div class="col-xs-6 col-md-5 col-xl-3 instruction-padding">
+                    <a href="#" id="instruction-link-one" class="rel-position" onclick="changeImageOne()">
+                        <div class="timeline-item rel-position" id="instruction-one">
+                            <div class="timeline-icon col-xs-3 col-sm-2 no-padding" id="timeline-icon-one">
                                 <p class="instruction" id="instruction">1</p>
                             </div>
-                            <div class="timeline-content right" id="timeline-header">
+                            <div class="timeline-content right col-xs-9 col-sm-10 no-padding" id="timeline-header">
                                 <p class="timeline-content-header">Create an event to share deals</p>
                                 <p class="timeline-description">
                                     Indicate your time, location and number of people
@@ -159,12 +164,12 @@
                         </div>
                     </a>
 
-                    <a href="#" id="instruction-link-two" onclick="changeImageTwo()">
-                        <div class="timeline-item" id="instruction-two">
-                            <div class="timeline-icon" id="timeline-icon-two">
+                    <a href="#" id="instruction-link-two" class="rel-position" onclick="changeImageTwo()">
+                        <div class="timeline-item rel-position" id="instruction-two">
+                            <div class="timeline-icon col-xs-3 col-sm-2 no-padding" id="timeline-icon-two">
                                 <p class="instruction">2</p>
                             </div>
-                            <div class="timeline-content right" id="timeline-header-two">
+                            <div class="timeline-content right col-xs-9 col-sm-10 no-padding" id="timeline-header-two">
                                 <p class="timeline-content-header">Choose your deal partner</p>
                                 <p class="timeline-description">
                                     Select who you want to enjoy the deal with
@@ -173,12 +178,12 @@
                         </div>
                     </a>
 
-                    <a href="#" id="instruction-link-three" onclick="changeImageThree()">
-                        <div class="timeline-item" id="instruction-three">
-                            <div class="timeline-icon" id="timeline-icon-three">
+                    <a href="#" id="instruction-link-three" class="rel-position" onclick="changeImageThree()">
+                        <div class="timeline-item rel-position" id="instruction-three">
+                            <div class="timeline-icon col-xs-3 col-sm-2 no-padding" id="timeline-icon-three">
                                 <p class="instruction">3</p>
                             </div>
-                            <div class="timeline-content right" id="timeline-header-three">
+                            <div class="timeline-content right col-xs-9 col-sm-10 no-padding" id="timeline-header-three">
                                 <p class="timeline-content-header">Enjoy the deal</p>
                                 <p class="timeline-description">
                                     Get a great promotion with great company
@@ -189,12 +194,11 @@
                     </a>
 
                 </div>
+                <div class="empty-whitespace col-xs-0 col-md-1 col-xl-3"></div>
+
             </div>
         </div>
     </section>
-
-
-
     <!--Download-->
     <section class="py-5" style="background-color: rgba(19,19,19,1);" >
         <div class="container">
@@ -226,7 +230,7 @@
 
             </div>
         </div>
-        <div class="container flex-direction-row">
+        <!-- <div class="container flex-direction-row">
 
             <div class="flex-left-60">
                 <div class="box">
@@ -253,7 +257,39 @@
                 </div>
             </div>
 
-        </div>
+        </div> -->
+
+        <div class="container no-margin no-limit">
+            <div class="row">
+
+                <div class="col-xs-12 col-lg-6">
+                    <div class="box">
+                        <img id="big_promotion" src="assets/safra_movie.jpg" alt="Snow">
+                        <div class="top-right" id="big_promotion_tag"><p>9 August 2018</p></div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <div class="box half-height picture-box-top rel-position">
+                        <img src="assets/starbucks_1.jpg" alt="Snow" style="">
+                        <div class="top-right"><p>27 August - 31 August 2018</p></div>
+                    </div>
+                    <div class="box half-height picture-box-bottom rel-position">
+                        <img src="assets/ben_jerry.jpg" alt="Snow" style="">
+                        <div class="top-right"><p>5 August 2018</p></div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <div class="box half-height picture-box-top rel-position">
+                        <img src="assets/theme_park.jpg" alt="Snow" style="">
+                        <div class="top-right"><p>9 - 12 August 2018</p></div>
+                    </div>
+                    <div class="box half-height picture-box-bottom rel-position">
+                        <img src="assets/jewel_coffee.jpg" alt="Snow" style="">
+                        <div class="top-right"><p>13 - 15 August 2018</p></div>
+                    </div>
+                </div>
     </section>
 
     <!--&lt;!&ndash; Contact &ndash;&gt;-->
@@ -452,6 +488,11 @@
         document.getElementById("iphone_demo").src = "assets/screen_three.png";
 
     }
+    $(".signup-button").hover(function() {
+        $(this).css("cursor", "pointer");
+    });
+
+    $(".no-limit").css("max-width", "none");
 
     $('#body').click(function() {
         if ($('#navbarResponsive').css('display') == "block"){
