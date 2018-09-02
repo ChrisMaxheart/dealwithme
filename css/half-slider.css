@@ -205,6 +205,14 @@ h4 {
         width: 100%;
     }
 }
+
+#iphone_demo {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+}
+
 /*#timeline:before {*/
 /*content: "";*/
 /*width: 3px;*/
@@ -213,6 +221,12 @@ h4 {
 /*left: 49%;*/
 /*top: 0;*/
 /*position: absolute;*/
+}
+
+.instruction-padding {
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #timeline:after {
@@ -234,9 +248,9 @@ h4 {
     height: 30px;
     position: absolute;
     top: 0;
-    left: 50%;
+    /*left: 10%;*/
     overflow: hidden;
-    margin-left: -23px;
+    /*margin-left: -23px;*/
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -259,10 +273,12 @@ h4 {
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #timeline .timeline-item .timeline-content.right {
-    float: right;
+    /*float: right;*/
 }
 
 .timeline-content-header {
@@ -381,6 +397,11 @@ h4 {
 .no-margin {
     margin-left: 0;
     margin-right: 0;
+}
+
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .rel-position {
@@ -663,11 +684,12 @@ h4 {
     }
 
     #iphone_demo {
-        width: 125px;
-        height: 250px;
-        margin-bottom: 20px;
-        margin-left: 80px;
-        margin-bottom: 20px;
+        /*width: 100%;*/
+        /*width: 125px;*/
+        /*height: 250px;*/
+        /*margin-bottom: 20px;*/
+        /*margin-left: 80px;*/
+        /*margin-bottom: 20px;*/
     }
 
     .grid2x2 {
@@ -813,13 +835,13 @@ h4 {
     }
 
     #iphone_demo {
-        margin-left: 150px;
+        /*margin-left: 150px;*/
     }
 }
 
 @media screen and (min-width: 1000px) and  (max-width: 1400px) {
     #iphone_demo {
-        margin-left: 150px;
+        /*margin-left: 150px;*/
     }
 
 
@@ -852,7 +874,7 @@ h4 {
     }
 
     #iphone_demo {
-        margin-left: 150px;
+        /*margin-left: 150px;*/
     }
 
 }
