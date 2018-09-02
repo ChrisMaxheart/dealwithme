@@ -72,17 +72,15 @@
                             <div class="form-title" style="color: #fff">Sign Up for our Deal Updates!</div>
                             <div class="form-body">
                                 <div class="form-row front-row">
-                                    <input type="text" placeholder="First Name*">
-                                    <input type="text" placeholder="Last Name*">
+                                    <input type="text" placeholder="First Name">
+                                    <input type="text" placeholder="Last Name">
                                 </div>
                                 <div class="form-row" id="full-width-input">
-                                    <input type="text" placeholder="Email Address*">
+                                    <input type="text" required placeholder="Email Address*">
                                 </div>
                             </div>
                             <div class="rule"></div>
                             <div class="form-footer" style="margin: 0 auto; text-align: center">
-
-                                <a style="color: #fff" class="signup-button">Sign me up<i class="fa fa-thumbs-o-up"></i></a>
 
                                 <button type="submit" class="btn btn-lg btn-primary" style="background-color: #1082c1">Sign up</button>
 
@@ -312,14 +310,16 @@
     <section class="py-5" id="feedback">
         <div class="container" id="feedback-container">
             <div class="cta container rounded text-center text-white">
-                <h2 id="section-title blue" style="margin-bottom: 40px;">Give us feedback</h2>
+                <h2 id="section-title blue" style="margin-bottom: 40px;">Sign up to receive promotion updates</h2>
                 <form class="justify-content-center"
                       action="https://submit-form.com/3f253b07-5cf0-490f-9bc7-9fdef60e483c" method="POST">
-                    <input type="email" name="email" class="form-control form-control-lg mr-2 form-display-block"
-                           placeholder="Your email (optional)..." id="feedback_email_input">
+                    <input type="text" name="username" class="form-control form-control-lg mr-2 form-display-block"
+                           placeholder="Your name" id="feedback_name_input">
+                    <input type="email" name="email" required class="form-control form-control-lg mr-2 form-display-block"
+                           placeholder="Your email*" id="feedback_email_input">
                     <textarea type="email" name="email" class="form-control form-control-lg mr-2 form-display-block"
-                              placeholder="Enter your feedback..." id="feedback_input"></textarea>
-                    <button type="submit" class="btn btn-lg btn-primary yellow" id="feedback_button">Submit</button>
+                              placeholder="Enter your message (optional)..." id="feedback_input"></textarea>
+                    <button type="submit" class="btn btn-lg btn-primary yellow" id="feedback_button">Sign up</button>
                 </form>
             </div>
 
