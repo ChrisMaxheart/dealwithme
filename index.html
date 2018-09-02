@@ -33,7 +33,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="assets/fav_icons/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="assets/fav_icons/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/fav_icons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="assets/fav_icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/fav_icons/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/fav_icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/fav_icons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/fav_icons/favicon-16x16.png">
@@ -74,20 +74,22 @@
 </nav>
 
 <body>
-    <div id="body">
+<div id="body">
     <!-- Slider -->
     <header>
         <div id="home" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
                 <!-- Slide One - Set the background image for this slide in the line below -->
-                <div class="carousel-item active" style="background-image: url('assets/cover_2.png'); position: relative">
+                <div class="carousel-item active"
+                     style="background-image: url('assets/cover_2.png'); position: relative">
                     <div class="carousel-caption">
                         <h1 class="caption-header">THE BEST WAY TO ENJOY PROMOTIONS</h1>
                         <p></p>
                         <a class="btn btn-lg btn-green text-caps weight-bold" href="#download">Download Now!</a>
                     </div>
                     <div class="card-form floatForm hide-on-small">
-                        <form action="https://submit-form.com/3f253b07-5cf0-490f-9bc7-9fdef60e483c" method="POST" class="signup">
+                        <form action="https://submit-form.com/3f253b07-5cf0-490f-9bc7-9fdef60e483c" method="POST"
+                              class="signup">
                             <div class="form-title" style="color: #fff">Sign Up for our Deal Updates!</div>
                             <div class="form-body">
                                 <div class="form-row front-row">
@@ -101,7 +103,9 @@
                             <div class="rule"></div>
                             <div class="form-footer" style="margin: 0 auto; text-align: center">
 
-                                <button type="submit" class="btn btn-lg btn-primary" style="background-color: #1082c1">Sign up</button>
+                                <button type="submit" class="btn btn-lg btn-primary" style="background-color: #1082c1">
+                                    Sign up
+                                </button>
 
                             </div>
                         </form>
@@ -200,7 +204,8 @@
                             <div class="timeline-icon col-xs-3 col-sm-2 no-padding" id="timeline-icon-three">
                                 <p class="instruction">3</p>
                             </div>
-                            <div class="timeline-content right col-xs-9 col-sm-10 no-padding" id="timeline-header-three">
+                            <div class="timeline-content right col-xs-9 col-sm-10 no-padding"
+                                 id="timeline-header-three">
                                 <p class="timeline-content-header">Enjoy the deal</p>
                                 <p class="timeline-description">
                                     Get a great promotion with great company
@@ -217,7 +222,7 @@
         </div>
     </section>
     <!--Download-->
-    <section class="py-5" style="background-color: rgba(19,19,19,1);" >
+    <section class="py-5" style="background-color: rgba(19,19,19,1);">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -334,7 +339,8 @@
                       action="https://submit-form.com/3f253b07-5cf0-490f-9bc7-9fdef60e483c" method="POST">
                     <input type="text" name="username" class="form-control form-control-lg mr-2 form-display-block"
                            placeholder="Your name" id="feedback_name_input">
-                    <input type="email" name="email" required class="form-control form-control-lg mr-2 form-display-block"
+                    <input type="email" name="email" required
+                           class="form-control form-control-lg mr-2 form-display-block"
                            placeholder="Your email*" id="feedback_email_input">
                     <textarea type="email" name="email" class="form-control form-control-lg mr-2 form-display-block"
                               placeholder="Enter your message (optional)..." id="feedback_input"></textarea>
@@ -356,7 +362,8 @@
                     <div class="inner about_us">
 
                         <p class="message">DealWithMe is a platform where people can share promotions or deals with,
-                            leading to mutual benefits as a community. We aim to help everyone enjoy sales promotions or deals,
+                            leading to mutual benefits as a community. We aim to help everyone enjoy sales promotions or
+                            deals,
                             or even share common experiences with other like-minded peoples.
                         </p>
 
@@ -370,7 +377,8 @@
             <!--</div>-->
             <!--</div>-->
 
-            <div class="col-sm-6 col-md-3" style="border-left-style: solid; border-left-width: 0.5px; border-color: #444;">
+            <div class="col-sm-6 col-md-3"
+                 style="border-left-style: solid; border-left-width: 0.5px; border-color: #444;">
                 <div class="widget-wrapper animated shown">
 
                     <h3 class="title title_left">Newsletter</h3>
@@ -445,7 +453,7 @@
 
         </div>
     </section>
-    </div>
+</div>
 </body>
 
 <!-- Footer -->
@@ -476,16 +484,16 @@
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <script>
-    $(document).ready(function(){
-        $(window).scroll(function(){
+    $(document).ready(function () {
+        $(window).scroll(function () {
             var scroll = $(window).scrollTop();
             if (scroll > 300) {
-                $(".bg-dark").css("background-color" , "blue");
+                $(".bg-dark").css("background-color", "blue");
                 alert('scrolling');
             }
 
-            else{
-                $(".bg-dark").css("background-color" , "#333");
+            else {
+                $(".bg-dark").css("background-color", "#333");
             }
         })
     })
@@ -507,31 +515,43 @@
         document.getElementById("iphone_demo").src = "assets/screen_three.png";
 
     }
-    $(".signup-button").hover(function() {
+
+    $(".signup-button").hover(function () {
         $(this).css("cursor", "pointer");
     });
 
     $(".no-limit").css("max-width", "none");
 
-    $('#body').click(function() {
-        if ($('#navbarResponsive').css('display') == "block"){
+    $('#body').click(function () {
+        if ($('#navbarResponsive').css('display') == "block") {
             console.log('true');
             $('#navbarResponsive').css("display", "none");
         }
     });
 
-    $('nav').click(function() {
-        if ($('#navbarResponsive').css('display') == "none"){
+    $('nav').click(function () {
+        if ($('#navbarResponsive').css('display') == "none") {
             $('#navbarResponsive').css("display", "block")
             $('#navbarResponsive').addClass("show")
         }
-        else{
+        else {
             $('#navbarResponsive').css("display", "none");
         }
     });
 
-</script>
+    $('#instruction-link-one').hover(function () {
+        changeImageOne()
+    });
 
+    $('#instruction-link-two').hover(function () {
+        changeImageTwo()
+    });
+
+    $('#instruction-link-three').hover(function () {
+        changeImageThree()
+    });
+
+</script>
 
 
 </html>
